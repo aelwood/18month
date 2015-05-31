@@ -32,6 +32,24 @@ R =
     0.05     &  p_{T,lep} \geq 200\textrm{GeV}\\
   \end{cases}
 \end{equation}
-The result of using this method of isolation on the $\alpha_T$ analysis was checked by running the full analysis with and without the new ``mini isolation'' method. The ratio of the upper limits set on the cross section of a variety of SUSY models can be seen in Table~\ref{tab:miniIsoResult}. 
+The result of using this method of isolation on the $\alpha_T$ analysis was checked by running the full analysis with and without the new ``mini isolation'' method. The ratio of the upper limits set on the cross section of a variety of SUSY models can be seen in Table~\ref{tab:miniIsoResult}. In most cases there is an improvement (a decrease in the cross section of the SUSY model that can be excluded). This is most likely due to the improved reduction in $t\bar{t}$ background. However, in the T1tttt model four tops are produced in the final state. By more accurately identifying the leptons in the decay products of these tops, the events move from an apparent hadronic final state to a leptonic one. It is assumed the loss in sensitivity in the $\alpha_T$ analysis will be picked up by a leptonic SUSY analysis.
 \\\\
-An additional improvement to the analysis is the categorisation of events based on their $\cancel{H_T}$. As SUSY production results in high values of this variable, the signal to background ratio significantly increases at high values of $\cancel{H_T}$. However, the $\alpha_T$ analysis relies on lepton and photon control samples to estimate the SM background in all the analysis bins. This reduces the reliance on the simulation of events with high $\cancel{E_T}$, which isn't well enough understood. There is therefore a limit to how high the bins of $\cancel{H_T}$ can extend, as the control samples must still have some events within these bins. In Run~1 single muon, double muon and single photon control samples were utilised. Single electron and double electron samples, analogous to the muon control samples, are now being introduced to increase the number of events available for background estimation and systematic error determination. Studies on simulation have shown that, with a tight enough requirement on the parameters of the electron identification algorithm, the electron control samples do not suffer from QCD contamination. They therefore effectively double the statistics available in the lepton control samples.
+\begin{table}[h!]
+  \caption{Changes to sensitivity of various benchmark SUSY models with the new mini isolation algorithm \label{tab:miniIsoResult}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    SUSY Model     & $\frac{\textrm{mini isolation upper limit on cross section}}{\textrm{normal isolation upper limit on cross section}}$\\ 
+    \hline                                                                     
+    T1bbbb $m_{\tilde{g}}=1500$~GeV $m_{LSP}=100$~GeV     & 0.95    \\  %& 0.505         \\
+    T1tttt $m_{\tilde{g}}=1200$~GeV $m_{LSP}=800$~GeV      & 1.10    \\  %& 0.505         \\
+    T2qq $m_{\tilde{t}}=600$~GeV $m_{LSP}=550$~GeV      & 0.97    \\  %& 0.505         \\
+    T2tt $m_{\tilde{t}}=500$~GeV $m_{LSP}=325$~GeV       & 0.96    \\  %& 0.505         \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\noindent An additional improvement to the analysis is the categorisation of events based on their $\cancel{H_T}$. As SUSY production results in high values of this variable, the signal to background ratio significantly increases at high values of $\cancel{H_T}$. However, the $\alpha_T$ analysis relies on lepton and photon control samples to estimate the SM background in all the analysis bins. This reduces the reliance on the simulation of events with high $\cancel{E_T}$, which isn't well enough understood. There is therefore a limit to how high the bins of $\cancel{H_T}$ can extend, as the control samples must still have some events within these bins. In Run~1 single muon, double muon and single photon control samples were utilised. Single electron and double electron samples, analogous to the muon control samples, are now being introduced to increase the number of events available for background estimation and systematic error determination. Studies on simulation have shown that, with a tight enough requirement on the parameters of the electron identification algorithm, the electron control samples do not suffer from QCD contamination. They therefore effectively double the statistics available in the lepton control samples.
