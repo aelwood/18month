@@ -1,11 +1,11 @@
 % $Id: introduction.tex 34630 2013-04-29 22:53:51Z roldeman $
 
-\section{The \boldmath$\alpha_T$ analysis at CMS}
+\section{The \boldmath $\alpha_T$ analysis at CMS}
 \label{sec:Introduction}
 
 %%%%%%% MY BIT
 
-The Standard Model (SM) of particle physics \cite{Salam1964}\cite{Glashow1961}\cite{Weinberg1967} has consistently stood up to experimental scrutiny. Despite its successes in describing fundamental particles and their interactions, their are experimental and theoretical inconsistencies that imply the SM is incomplete. One favoured extension of the SM is supersymmetry (SUSY), predicting the existence of a new particle for every SM particle. Whilst being theoretically well motivated, SUSY at the TeV scale can act to solve the Higgs hierarchy problem and provide a candidate dark matter particle \cite{SUSYprimerMartin:1997ns}\cite{more(See alphaT papter).
+The Standard Model (SM) of particle physics \cite{Salam1964}\cite{Glashow1961}\cite{Weinberg1967} has consistently stood up to experimental scrutiny. Despite its successes in describing fundamental particles and their interactions, their are experimental and theoretical inconsistencies that imply the SM is incomplete. One favoured extension of the SM is supersymmetry (SUSY), predicting the existence of a new particle for every SM particle. Whilst being theoretically well motivated, SUSY at the TeV scale can act to solve the Higgs hierarchy problem and provide a candidate dark matter particle \cite{SUSYprimerMartin:1997ns}\cite{more(See alphaT papter)}.
 \\\\
 % the LHC and cms
 The Large Hadron Collider (LHC) \cite{LHCMachine} is in the final stages of preparation for Run 2, in which the centre of mass of the proton collisions will increase from $8$~TeV in Run 1 to $13$~TeV. The CMS detector is built around one of the points in which the protons collide. It is a multi-purpose, hermetic particle detector designed to discover new heavy particles that will be produced in the high LHC energies. The CMS detector is built around a $~4$~Tesla magnet that bends charged particles to allow accurate determination of their momentum. These particles pass through the silicon tracking system, electromagnetic and hadronic calorimeters and finally the muon chambers. From the traces left behind in each of these subdetectors, the type of particle produced in the collision can be identified, and the momentum measured with a resolution of greater than $99\%$ \cite{ScienceArticle} \cite{CMSTechDesign1DetectorPerformance}. For a detailed description of the CMS detector see \cite{CMS_Overview_Chatrchyan:2008aa}.
@@ -30,7 +30,7 @@ with $n_{jet}$ jets, $j_i$, with transverse momentum $\vec{p}_T^{j_i}$ and trans
 \begin{equation}
 \alpha_T=\frac{1}{2}\times\frac{H_T-\Delta H_T}{\sqrt{H_T^2-\cancel{H}_T^2}}
 \end{equation}
-Balanced and mismeasured multijet events have values of $\alpha_T\leq0.5$, while events with genuine missing energy have values of $\alpha_T>0.5$. By choosing an appropriate cut above $0.5$ it is possible to reduce the multijet background to a negligible amount, this is evident in Fig.~\ref{fig:alphaT}.
+Balanced and mismeasured multijet events have values of $\alpha_T\leq0.5$, while events with genuine missing energy have values of $\alpha_T>0.5$. By choosing an appropriate cut above $0.5$ it is possible to reduce the multijet background to a negligible amount, this is evident in Fig.~\ref{fig:alphaT}. 
 
 \begin{figure}
 	\begin{center}
@@ -42,6 +42,28 @@ Balanced and mismeasured multijet events have values of $\alpha_T\leq0.5$, while
 
 \subsection{The \boldmath $\alpha_T$ analysis}
 
-The only genuine source of missing transverse energy ($\cancel{E}_T$) in the SM is electroweak neutrino production. In these cases an associated lepton is simultaneously produced. This background is minimised by vetoing any events with isolated\footnote{A particle is isolated if the energy of other particles within a cone of $\sqrt{(\Delta\phi)^2+(\Delta\eta)^2}=0.3$ do not add up to a significant proportion of the particle's momentum, typically $~10%$} leptons of $p_T>10$~GeV or photons of $p_T>25$~GeV.
+The only genuine source of missing transverse energy ($\cancel{E}_T$) in the SM is electroweak neutrino production. In these cases an associated lepton is simultaneously produced. This background is minimised by vetoing any events with isolated \footnote{A particle is isolated if the energy of other particles within a cone of $\sqrt{(\Delta\phi)^2+(\Delta\eta)^2}=0.3$ do not add up to a significant proportion of the particle's momentum, typically $~10$\%} leptons of $p_T>10$~GeV. To ensure a fully hadronic final state there is also a veto on photons of $p_T>25$~GeV. Further, to reduce the ``lost leptons'' backgrounds from W~+~jets 
+and \ttbar, events containing single isolated tracks with $\pt >10\GeV$ and $|\eta| < 2.5$, providing they don't coincide with previously identified leptons.
 \\\\
-After the veto, events are selected that $p_T>40$~GeV jets, where the jets are well reconstructed in the central region, $|\eta|<3$. Events are categorised based on the number of jets, the number of jets with a reconstructed b-quark and the value of $H_T$. This allows for a variable $\alpha_T$ cut based on the category, maximising signal acceptance. Full details of the analysis as carried out on Run 1 data can be found at \cite{AlphaT8TeVChatrchyan:2013lya} and \cite{AlphaT_7TeV_PRLChatrchyan:2011zy}.
+After the veto, events are selected that contain $p_T>40$~GeV jets, where the jets are well reconstructed in the central region, $|\eta|<3$. If any of these jets fall outside the $\eta$ range, the event is vetoed. Significant hadronic activity is selected for by requiring $H_T>200$~GeV. Events are categorised based on the number of jets, the number of jets with a reconstructed b-quark and the value of $H_T$. 
+\\\\
+Due to the reduction in QCD cross section at high values of $H_T$ the $\alpha_T$ cut is reduced with this variable while keeping a consistent effective missing $H_T$ ($\cancel{H_T}$) value, see Table~\ref{tab:alphat-thresholds}. Additional cleaning cuts on the ratio of $\cancel{H_T}/\cancel{E_T}$ are also required to reduce instances of high $\cancel{H_T}$ caused by jets just falling out of acceptance. Full details of the analysis as carried out on Run 1 data can be found at \cite{AlphaT8TeVChatrchyan:2013lya} and \cite{AlphaT_7TeV_PRLChatrchyan:2011zy}, and developments for Run 2 in \cite{AN-15-004}.
+
+\begin{table}[h!]
+  \caption{\alphat and (effective) \mht thresholds per \scalht bin.\label{tab:alphat-thresholds}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcccccc }
+    \hline
+    \hline
+    \scalht      & 200--250   & 250--300   & 300--350  & 350--400  & 400--800 \\ %& $>$900       \\
+    \hline                                                                     
+    \alphat      & 0.65       & 0.60       & 0.55      & 0.53      & 0.52     \\  %& 0.505         \\
+    "Min \mht"   & $\sim$128  & $\sim$138  & $\sim$125 & $\sim$133 & $\sim$137 \\  %& $\sim$126 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\\\\
+For the prediction of backgrounds and measuring of systematic errors control samples are defined. These have all the cuts used for the signal selection described above, but require the existence of one or two leptons or a photon. These leptons and photons are ignored in the calculation of any analysis variables. Additionally, in the case of the lepton control sample no $\alpha_T$ requirement is made.
